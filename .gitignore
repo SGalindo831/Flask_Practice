@@ -2,24 +2,39 @@
 __pycache__/
 *.py[cod]
 
+
+# Database
+*.db
+instance/
+
+
 # Virtual environments
 venv/
 .env/
 .venv/
+
+
+# Environment variables (secrets)
+.env
+
 
 # Testing
 .pytest_cache/
 .coverage
 htmlcov/
 
-# Build / packaging (if you ever package it)
+
+# Build / packaging
 dist/
 build/
 *.egg-info/
+
 
 # IDE/editor
 .vscode/
 .idea/
 
+
 # macOS
 .DS_Store
+
