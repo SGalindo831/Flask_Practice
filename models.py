@@ -4,6 +4,7 @@ from werkzeug.security import generate_password_hash, check_password_hash
 
 db = SQLAlchemy()
 
+# USER MODEL
 class User(UserMixin, db.Model):
     id = db.Column(db.Integer, primary_key=True) # Auto increments
     username = db.Column(db.String(80), unique=True, nullable=False) # Username must be unique
@@ -18,3 +19,6 @@ class User(UserMixin, db.Model):
     
     def __repr__(self):
         return f'<User {self.username}>'
+    
+# TICKETING MODEL
+# class Ticekt(db.Model):
